@@ -1,6 +1,10 @@
-import json, time, logging
-from dataclasses import dataclass, field
-from typing import List, Dict, Any, Optional, Callable
+import time
+import logging
+from dataclasses import dataclass
+from dataclasses import field
+from typing import List
+from typing import Dict
+from typing import Optional
 from enum import Enum
 
 logger = logging.getLogger(__name__)
@@ -113,6 +117,7 @@ class AgentEvaluator:
                     cat_scores[cat] = []
                 cat_scores[cat].append(r.score)
             except Exception as e:
+                print(f"Error running test case '{tc.name}': {e}")
                 skipped += 1
         return EvalReport(
             total_tests=len(test_cases),

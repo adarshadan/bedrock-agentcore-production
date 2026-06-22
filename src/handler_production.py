@@ -1,11 +1,8 @@
 import json
-import logging
 import os
 import time
 from typing import Any
 from typing import Dict
-
-import boto3
 
 from src.agent.agentcore import AgentCore
 from src.actions.weather_tool import WeatherTool
@@ -56,7 +53,8 @@ def get_agent() -> AgentCore:
         ]
         _agent = AgentCore(
             model_id=os.getenv("BEDROCK_MODEL_ID", "zai.glm-4.7-flash"),
-            system_prompt="You are a helpful customer service assistant for TechStore. Use tools for data.",
+            system_prompt="You are a helpful customer service assistant for TechStore. " \
+            "Use tools for data.",
             max_iterations=int(os.getenv("MAX_ITERATIONS", "5")),
             tools=tools,
         )

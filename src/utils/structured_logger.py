@@ -1,7 +1,8 @@
 import json
 import logging
 from datetime import datetime
-from typing import Any, Dict
+from typing import Any
+from typing import Dict
 
 
 class StructuredLogger:

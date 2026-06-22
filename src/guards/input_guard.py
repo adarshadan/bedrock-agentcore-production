@@ -1,6 +1,8 @@
-import re, logging
-from dataclasses import dataclass, field
-from typing import List, Optional
+import re
+from dataclasses import dataclass
+from dataclasses import field
+from typing import List
+from typing import Optional
 from enum import Enum
 
 

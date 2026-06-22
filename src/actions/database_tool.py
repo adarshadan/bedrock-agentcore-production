@@ -1,5 +1,4 @@
 import boto3
-from typing import Optional
 from src.actions.base import BaseTool, ToolParameter, ToolResult, ToolPermission
 
 

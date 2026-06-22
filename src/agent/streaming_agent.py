@@ -1,4 +1,3 @@
-import json
 import boto3
 from typing import Generator, Dict, Any
 

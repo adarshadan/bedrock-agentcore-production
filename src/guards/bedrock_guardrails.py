@@ -1,5 +1,7 @@
-import boto3, logging
-from typing import Dict, Any
+import boto3
+import logging
+from typing import Dict
+from typing import Any
 
 logger = logging.getLogger(__name__)
 

@@ -3,7 +3,8 @@ from src.actions.base import BaseTool, ToolParameter, ToolResult, ToolPermission
 
 class CalculatorTool(BaseTool):
     name = "calculator"
-    description = "Perform mathematical calculations. Supports: add, subtract, multiply, divide, power, modulo."
+    description = "Perform mathematical calculations. " \
+    "Supports: add, subtract, multiply, divide, power, modulo."
     parameters = [
         ToolParameter(
             name="operation",

@@ -6,7 +6,8 @@ from src.actions.base import BaseTool, ToolParameter, ToolResult, ToolPermission
 
 class WeatherTool(BaseTool):
     name = "get_weather"
-    description = "Get current weather conditions for a city. Returns temperature, conditions, humidity, and wind speed."
+    description = "Get current weather conditions for a city. " \
+    "Returns temperature, conditions, humidity, and wind speed."
     parameters = [
         ToolParameter(
             name="city",
