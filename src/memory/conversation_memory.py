@@ -55,7 +55,7 @@ class ConversationMemory:
         ]
 
     def _truncate_if_needed(self) -> None:
-        if len(self.messages) > self.max_messages: 
+        if len(self.messages) > self.max_messages:
             self.messages = self.messages[-self.max_messages:]
 
     def clear(self) -> None:
