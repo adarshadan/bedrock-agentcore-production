@@ -1,0 +1,3 @@
+-r requirements.txt
+aws-xray-sdk>=2.13.0
+structlog>=24.1.0
