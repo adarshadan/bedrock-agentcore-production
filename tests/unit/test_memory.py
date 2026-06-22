@@ -1,13 +1,4 @@
-import sys
-import os
-
-sys.path.insert(
-    0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-)
-
-from src.memory.conversation_memory import Message
-from src.memory.conversation_memory import ConversationMemory
-from src.memory.conversation_memory import MessageRole
+from src.memory.conversation_memory import Message, ConversationMemory, MessageRole
 
 
 def test_add_messages():
