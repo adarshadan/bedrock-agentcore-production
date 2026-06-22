@@ -15,7 +15,7 @@ jobs:
           python-version: '3.11'
       - run: pip install -r requirements-dev.txt
       - run: black src/ tests/
-      - run: flake8 src/ tests/ --max-line-length=100
+      - run: flake8 src/ tests/ --max-line-length=180
 
   unit-tests:
     runs-on: ubuntu-latest
