@@ -4,7 +4,8 @@ from src.actions.base import BaseTool, ToolParameter, ToolResult, ToolPermission
 
 class CustomerDatabaseTool(BaseTool):
     name = "query_customer"
-    description = "Query customer information from the database. Always ask for customer identifier before using."
+    description = "Query customer information from the database. " \
+    "Always ask for customer identifier before using."
     parameters = [
         ToolParameter(
             name="identifier",
