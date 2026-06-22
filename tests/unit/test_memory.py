@@ -1,4 +1,6 @@
-from src.memory.conversation_memory import Message, ConversationMemory, MessageRole
+from src.memory.conversation_memory import Message
+from src.memory.conversation_memory import ConversationMemory
+from src.memory.conversation_memory import MessageRole
 
 
 def test_add_messages():
