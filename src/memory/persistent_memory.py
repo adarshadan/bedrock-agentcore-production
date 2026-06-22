@@ -1,4 +1,5 @@
-import boto3, time
+import boto3
+import time
 from typing import List, Dict
 
 

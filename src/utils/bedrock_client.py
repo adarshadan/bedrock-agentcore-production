@@ -1,6 +1,4 @@
 import boto3
-from typing import Optional
-
 
 class BedrockClient:
     def __init__(self, region: str = "us-east-1"):
